@@ -16,7 +16,7 @@ const interBold = readFont('Inter-Bold.ttf');
 
 export async function GET(
   _req: Request,
-  { params }: { params: { slug: string[] } },
+  { params }
 ) {
   const [interRegularData, interBoldData] = await Promise.all([
     interRegular,
