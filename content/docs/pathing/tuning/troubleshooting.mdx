@@ -74,4 +74,19 @@ Otherwise, join the [Pedro Pathing Discord](https://discord.gg/2GfC4qBP5s) and a
         If the Tuning class dropdown in the Panels Configurables is empty, double check that you have selected an OpMode in the Tuning OpMode using the gamepad before reloading the Panels website. The Panels website is accessible at the ip address
     `192.168.43.1:8001` when connected to robot wifi.
     </Accordion>
+
+    <Accordion title="Robot Moves in Wrong Direction or Robot Encoder Counting Inaccurately">
+        **My robot drives infinitely in automatic tuners:**
+        - If your robot drives forever in a direction, reverse the respective encoder to that direction.
+        
+        **My robot does not drive the correct way in TeleOp / Localization is not working:**
+            1. Run the LocalizationTest OpMode
+            2. Use gamepad1 joysticks to move around:
+                - Left Stick Y: Forward and Backwards
+                - Left Stick X: Strafe Left and Right
+                - Right stick: Rotation
+            3. If movement directions are wrong then run the Motor Directions OpMode, there is a button to make the motors spin forward, if it spins backwards instead then change the reversal.
+
+        For more information on how mecanum wheels move refer to [this image](https://cdn11.bigcommerce.com/s-x56mtydx1w/images/stencil/original/products/2005/10985/3213-3606-0003-Product-Insight-4__96315__10052.1701994274.png?c=1) provided by goBILDA®.
+    </Accordion>
 </Accordions>
